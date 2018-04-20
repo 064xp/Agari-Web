@@ -101,14 +101,14 @@
 @media (max-width:450px){
 	/*-------------INICIO-------------*/
   #startvid{
-    display: none;
-  }
+  display: none;
+}
+#section0{
+  background-image: url("img/drink.jpg");
+  background-size:cover;
+  background-position: 50% 50%;
+}
 
-  #section0{
-    background-image: url("img/drink.jpg");
-    background-size:cover;
-    background-position: 40% 50%;
-  }
 	.overlay{
 		position: absolute;
 		z-index:1;
@@ -157,27 +157,23 @@
 
 
 	/*-------------COMPRAR-------------*/
-	#clasico{
-		background-color:#B3B3B3;
-	}
-	#clasico div{
-		width:100%;
-	}
+
 	#clasico h1{
 		color:black;
 
 		text-align:center;
 		background-color:white;
 	}
-
+  #clasico{
+    background-image: url("img/clasico.jpg");
+    background-size: cover;
+    background-position: right;
+  }
 
 
 	/*LANDSCAPE PHONE*/
 	@media (min-height:0px) and (max-height:400px){
 		/*-------------INICIO-------------*/
-    #startvid{
-      display: none;
-    }
 
 		#startHeader{
 			display: none;
@@ -199,10 +195,12 @@
     #section0{
       background-image: url("img/drink.jpg");
       background-size:cover;
-      background-position: 40% 50%;
-
+      background-position: 50% 50%;
     }
 
+    #startvid{
+  display: none;
+}
 		.overlay{
 		position: absolute;
 		z-index:1;

@@ -149,9 +149,7 @@ nav svg{/*mobile green top bar*/
 #mobile-nav ul{
 	list-style-type: none
 }
-#mobile-nav li{
-width:100%;
-}
+
 
 #menu-items{
 	text-decoration: none;
@@ -159,7 +157,7 @@ width:100%;
 	background-color: #f0f0f0;
 	width:100%;
 	padding:15px;
-	font-size: 25px;
+	font-size: 50px;
 	color:black;
 }
 
@@ -175,7 +173,7 @@ width:100%;
 	position:fixed;
 	top: 70px;
 	right:0;
-	width:65vw;
+	width:90%;
 	-webkit-transform:translateX(100%);
 	-webkit-transition: all ease-in 300ms;
 }
@@ -241,6 +239,16 @@ width:100%;
 		z-index: 1;
 	}
 
+	#menu-items{
+		text-decoration: none;
+		display:block;
+		background-color: #f0f0f0;
+		width:100%;
+		padding:15px;
+		font-size: 25px;
+		color:black;
+	}
+
 	.top-bar{
 		height:60px;
 	}
@@ -254,7 +262,7 @@ width:100%;
 		top:60px;
 	}
 	#toggle:checked ~ .ham-list-items {
-		-webkit-transform: translateX(10%);
+		-webkit-transform: translateX(25%);
 	}
 }
 /*------------------------END OF MOBILE NAVBAR------------------------*/
