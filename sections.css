@@ -100,6 +100,15 @@
 
 @media (max-width:450px){
 	/*-------------INICIO-------------*/
+  #startvid{
+    display: none;
+  }
+
+  #section0{
+    background-image: url("img/drink.jpg");
+    background-size:cover;
+    background-position: 40% 50%;
+  }
 	.overlay{
 		position: absolute;
 		z-index:1;
@@ -166,6 +175,9 @@
 	/*LANDSCAPE PHONE*/
 	@media (min-height:0px) and (max-height:400px){
 		/*-------------INICIO-------------*/
+    #startvid{
+      display: none;
+    }
 
 		#startHeader{
 			display: none;
@@ -184,6 +196,13 @@
 
 	@media (min-width:768px) and (max-width:1023px){
 		/*-------------INICIO-------------*/
+    #section0{
+      background-image: url("img/drink.jpg");
+      background-size:cover;
+      background-position: 40% 50%;
+
+    }
+
 		.overlay{
 		position: absolute;
 		z-index:1;

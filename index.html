@@ -79,10 +79,10 @@
 
 
 				<ul class="ham-list-items myMenu">
-					<li data-menuanchor="AgariInicio"><a href="#AgariInicio" id="menu-items"><i class="fas fa-home"></i> Inicio</a></li>
-					<li data-menuanchor="ComprarSabores"><a href="#ComprarSabores" id="menu-items"><i class="fas fa-glass-martini nav-icons"></i> Comprar</a></li>
-					<li data-menuanchor="SobreAgari"><a href="#SobreAgari" id="menu-items"><i class="fas fa-leaf"></i>	Sobre agari</a></li>
-					<li data-menuanchor="Contactanos"><a href="#Contactanos" id="menu-items"><i class="fas fa-envelope"></i> Contacto</a></li>
+					<li data-menuanchor="AgariInicio"><a href="#section0" id="menu-items"><i class="fas fa-home"></i> Inicio</a></li>
+					<li data-menuanchor="ComprarSabores"><a href="#section1" id="menu-items"><i class="fas fa-glass-martini nav-icons"></i> Comprar</a></li>
+					<li data-menuanchor="SobreAgari"><a href="#section2" id="menu-items"><i class="fas fa-leaf"></i>	Sobre agari</a></li>
+					<li data-menuanchor="Contactanos"><a href="#section3" id="menu-items"><i class="fas fa-envelope"></i> Contacto</a></li>
 				</ul>
 
 		<div id="logo-mobile">
@@ -112,9 +112,13 @@
 		<h1 id="startHeader">agari</h1>
 		<p id="startP">El popote ecológico</p>
 		<i class="fas fa-angle-double-down"></i>
+		<video id="startvid"loop data-autoplay muted>
+			<source src="img/testvid.mp4" type="video/mp4">
+		</video>
 
 	</div>
 	<!--END OF START INICIO-->
+
 
 	<!--Comprar-->
 
@@ -144,17 +148,14 @@
 			</div>
 
 	</div>
-	<div class="section" id="Sobre">Sobre Agari</div>
-	<div class="section">Contacto</div>
+	<div class="section" id="section2">Sobre Agari</div>
+
+
+	<div class="section" id="section3">Contacto</div>
 </div>
 
 
 </body>
 
-	<script>
-		$('#next').click(function(){
-    $.fn.fullpage.moveSlideRight();
-});
 
-	</script>
 </html>
