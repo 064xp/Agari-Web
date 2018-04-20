@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link href="navbar.css" rel="stylesheet"/>
+		<link href="sections.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+		<link rel="shortcut icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1H16TH2Cb22kBIJA4erVsxiCA80-rzu3q"/>
+		<!--scripts-->
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+		<!--<script src="fullpage/vendors/jquery.easings.min.js"></script>-->
+		<script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="fullpage/vendors/scrolloverflow.min.js"></script>
+
+		<!--initalization fullPage.js-->
+		<script type="text/javascript">
+		$(document).ready(function() {
+		$('#fullpage').fullpage({
+			sectionsColor : ['#5ef058', '#fff','#5ef058', '#fff'],
+			css3:true,
+			anchors: ['AgariInicio', 'ComprarSabores', 'SobreAgari', 'Contactanos'],
+			menu:'.myMenu',
+			scrollOverflow:true
+
+		});
+		});
+
+
+		</script>
+		<!-- end of initalization-->
+	<title>agari</title>
+
+</head>
+
+<body>
+<!--navbar-->
+<div id="navbar-wrapper">
+	<nav id="destkop-navbar">
+<div id="nav-elements">
+	<p id="agari-font">agari</p>
+		<ul class="myMenu">
+				<li data-menuanchor="Contactanos"><a href="#Contactanos"><i class="fas fa-envelope"></i>	Contacto</a></li>
+				<li data-menuanchor="SobreAgari"><a href="#SobreAgari"><i class="fas fa-leaf"></i>	Sobre agari</a></li>
+				<li data-menuanchor="ComprarSabores"><a href="#ComprarSabores"><i class="fas fa-glass-martini nav-icons"></i> Comprar</a></li>
+				<li data-menuanchor="AgariInicio"><a href="#AgariInicio"><i class="fas fa-home"></i> Inicio</a></li>
+		</ul>
+</div>
+
+<div id="logo">
+			<a href="#"><img id="img-logo" src="img/agari_logo" alt="agari logo" height="118px" ></a>
+
+	<svg height="200px" width="200px">
+
+			<circle cx="79px" cy="64px" r="65px" fill="#45a941"/>
+	</svg>
+</div>
+	</nav>
+
+<!--mobile navbar-->
+
+<nav id="mobile-nav">
+
+	<p id="agari-font">agari</p>
+
+	<svg width="100%" height="70px" class="top-bar">
+		<rect width="100%" height="70px" style="fill:#45a941;">
+	</svg>
+	<input type="checkbox" id="toggle" >
+	<label for="toggle" id="ham-button">
+		<i class="fas fa-bars" ></i>
+	</label>
+
+
+				<ul class="ham-list-items myMenu">
+					<li data-menuanchor="AgariInicio"><a href="#AgariInicio" id="menu-items"><i class="fas fa-home"></i> Inicio</a></li>
+					<li data-menuanchor="ComprarSabores"><a href="#ComprarSabores" id="menu-items"><i class="fas fa-glass-martini nav-icons"></i> Comprar</a></li>
+					<li data-menuanchor="SobreAgari"><a href="#SobreAgari" id="menu-items"><i class="fas fa-leaf"></i>	Sobre agari</a></li>
+					<li data-menuanchor="Contactanos"><a href="#Contactanos" id="menu-items"><i class="fas fa-envelope"></i> Contacto</a></li>
+				</ul>
+
+		<div id="logo-mobile">
+							<a href="#"><img id="img-logo-mobile"src="img/agari_logo" alt="agari logo" height="100px" ></a>
+
+					<svg id="circle-tablet" height="200px" width="200px">
+
+							<circle cx="60.5px" cy="57px" r="53px" fill="#45a941"/>
+					</svg>
+
+						<svg id="circle-phone" height="200px" width="200px">
+
+								<circle cx="47.5px" cy="42px" r="42px" fill="#45a941"/>
+						</svg>
+		</div>
+</nav>
+</div>
+
+
+
+
+<!--sections-->
+
+<div id="fullpage">
+	<!--Home page INICIO-->
+	<div class="section" id="section0">
+		<h1 id="startHeader">agari</h1>
+		<p id="startP">El popote ecológico</p>
+		<i class="fas fa-angle-double-down"></i>
+		<div class="overlay"></div>
+		<video id="startvid"loop data-autoplay muted>
+			<source src="img/testvid.mp4" type="video/mp4">
+		</video>
+
+	</div>
+	<!--END OF START INICIO-->
+
+	<!--Comprar-->
+
+	<div class="section" id="section1">
+		<!--slide Clasico-->
+			<div class="slide" id="clasico">
+				<div class="overlayphotos"></div>
+				<img src="img/titles/clasico_tt.svg" alt="CLASICO">
+			</div>
+
+			<!--slide Limon-->
+			<div class="slide" id="limon">
+					<img src="img/titles/limon_tt.svg" alt="LIMON">
+
+			</div>
+			<!--slide chamoy-->
+			<div class="slide" id="chamoy">
+					<img src="img/titles/chamoy_tt.svg" alt="CHAMOY">
+			</div>
+			<!--slide fresa-->
+			<div class="slide" id="fresa">
+<img src="img/titles/fresa_tt.svg" alt="LIMON">
+			</div>
+			<!--slide chocolate-->
+			<div class="slide" id="chocolate">
+					<img src="img/titles/chocolate_tt.svg" alt="CHOCOLATE">
+			</div>
+
+	</div>
+	<div class="section" id="Sobre">Sobre Agari</div>
+	<div class="section">Contacto</div>
+</div>
+
+
+</body>
+
+	<script>
+		$('#next').click(function(){
+    $.fn.fullpage.moveSlideRight();
+});
+
+	</script>
+</html>
