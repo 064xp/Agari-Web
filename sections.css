@@ -340,6 +340,7 @@ label{
 
 /*-------------SOBRE AGARI PHONE-------------*/
 	/*Sobre agari slide*/
+
   #sobreSlide p{
 
     width:72%;
@@ -359,6 +360,10 @@ label{
 	/*END OF Sobre agari slide*/
 
   /*Mision vv slide*/
+
+  #misionvv{
+    overflow-y: scroll;
+  }
 
   .mvWrapper{
   display: flex;
