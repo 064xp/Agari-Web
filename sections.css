@@ -65,22 +65,45 @@
   background-image: url("img/clasico.jpg");
   background-size: cover;
 }
+#clasico img{
+  -webkit-transform:scale(1.2);
+  top:3%;
+}
+
 #limon{
   background-image: url("img/limon.jpg");
   background-size: cover;
+}
+#limon img{
+  -webkit-transform:scale(1.2);
+  top:3%;
 }
 
 #chamoy{
   background-image: url("img/chamoy.jpg");
   background-size: cover;
 }
+#chamoy img{
+  -webkit-transform:scale(1.4);
+  top:3%;
+}
+
 #fresa{
   background-image: url("img/fresa.jpg");
   background-size: cover;
 }
+#fresa img{
+  -webkit-transform:scale(1.37);
+  top:3%;
+}
+
 #chocolate{
   background-image: url("img/chocolate.jpg");
   background-size: cover;
+}
+#chocolate img{
+  -webkit-transform:scale(1.23,1.6);
+  top:3%;
 }
 
 #section1 img{
@@ -96,9 +119,160 @@
 
 /*-------------END OF COMPRAR DESKTOP-------------*/
 
+
+/*-------------SOBRE AGARI DESKTOP-------------*/
+
+#sobreSlide{
+	background-image: url("img/leaves-bg.jpg");
+	background-size:cover;
+	}
+
+#sobreSlide p{
+  background-color:rgba(132, 184,	2, .7);
+  width:40%;
+  text-align: center;
+  margin:auto;
+  padding:20px;
+  font-size:130%;
+  font-weight: normal;
+}
+
+.head1{
+  font-weight:bolder;
+  font-size: 35px;
+}
+
+/*Mision vv slide*/
+  #misionvv{
+    background-color: #eee;
+    color:black;
+  }
+
+.mvWrapper{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.mvItems{
+  width:300px;
+  margin:0;
+  padding:0;
+  text-align: center;
+  flex-basis: 350%;
+}
+
+
+.mvWrapper p{
+  width: 70%;
+  text-align:center;
+  margin: auto;
+  font-size: 20px;
+}
+
+.mvWrapper h2{
+  background-color: #45a941;
+  width:150px;
+  height: 150px;
+  color:white;
+  display: block;
+  margin:0 auto 30px auto;
+  line-height: 150px;
+  -webkit-border-radius:50%;
+  font-size: 50px;
+
+}
+
+.mvWrapper h3{
+  font-size: 25px;
+  margin-bottom:15px;
+}
+/*end of mision vv slide*/
+
+/*-------------END OF SOBRE AGARI DESKTOP-------------*/
+
+
+/*-------------CONTACTO DESKTOP-------------*/
+
+#section3 input{
+  display:block;
+  width:100%;
+  margin-bottom: 50px;
+	padding-left:10px;
+	-webkit-border-radius:15px;
+	font-size:17px;
+	font-family: Futura, sans-serif;
+	border: 1px solid #282828;
+}
+label{
+  color:black;
+}
+
+#section3 textarea{
+  display:block;
+	font-size:17px;
+	font-family: Futura, sans-serif;
+	padding-left:10px;
+	-webkit-border-radius:15px;
+	resize: none;
+	border: 1px solid #282828;
+}
+
+#section3 form{
+	margin:5% 10% 0 5%;
+	width:33%;
+}
+
+.btn-submit{
+	display:block;
+	height:30px;
+	width:200px;
+	border:0;
+
+	margin-top:15px;
+	-webkit-border-radius:15px;
+	position:relative;
+	float:right;
+	font-weight:bold;
+	font-size:17px;
+
+	background-color: rgba(69, 169, 65, 0);
+	border: solid 3px rgb(69, 169, 65);
+	color:#3E3E3E;
+}
+
+.btn-submit:hover{
+	color:white;
+	background-color: #45a941;
+}
+
+/*-------------END OF CONTACTO DESKTOP-------------*/
+
+
 /*==phone==*/
 
 @media (max-width:450px){
+
+/*smaller arrows*/
+
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 18.5px 14px 18.5px 0 !important;
+    border-color: transparent #fff transparent transparent;
+    opacity:.6;
+  }
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 18.5px 0 18.5px 14px !important;
+    border-color: transparent transparent transparent #fff;
+    opacity:.6;
+}
+/*end of smaller arrows*/
+
+
+
 	/*-------------INICIO-------------*/
   #startvid{
   display: none;
@@ -143,7 +317,7 @@
 	#section0 i{
 		display:block;
 		z-index: 3;
-		color:#343434;
+		color:#272727;
 		font-size: 80px;
 		width:100%;
 		text-align:center;
@@ -152,45 +326,112 @@
 		margin-bottom: 30%;
 
 	}
-	/*-------------END OF INICIO-------------*/
+	/*-------------END OF INICIO PHONE-------------*/
 
 
 
-	/*-------------COMPRAR-------------*/
+	/*-------------COMPRAR PHONE-------------*/
 
-	#clasico h1{
-		color:black;
+			/*none*/
 
-		text-align:center;
-		background-color:white;
-	}
-  #clasico{
-    background-image: url("img/clasico.jpg");
-    background-size: cover;
-    background-position: right;
+/*-------------END OF COMPRAR PHONE-------------*/
+
+
+
+/*-------------SOBRE AGARI PHONE-------------*/
+	/*Sobre agari slide*/
+  #sobreSlide p{
+
+    width:72%;
+    text-align: center;
+    margin:auto;
+    padding:20px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .head1{
+    font-weight:bolder;
+    font-size: 24px;
   }
 
 
-	/*LANDSCAPE PHONE*/
-	@media (min-height:0px) and (max-height:400px){
-		/*-------------INICIO-------------*/
+	/*END OF Sobre agari slide*/
 
-		#startHeader{
-			display: none;
-			font-size:20px;
-			z-index: 3;
-			text-align: center;
-			margin-top:-20%;
-			width:100%;
-		}
-		/*-------------INICIO-------------*/
+  /*Mision vv slide*/
+
+  .mvWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+  .mvItems{
+  }
+
+
+  .mvWrapper p{
+    font-size: 18px;
+    margin-bottom:5px;
+  }
+
+  .mvWrapper h2{
+    height:100px;
+    width:100px;
+    line-height: 100px;
+  }
+
+  .mvWrapper h2:nth-child(1){
+    margin-top:90px;
+  }
+
+  .mvWrapper h3{
+    font-size: 18px;
+    margin:0;
+  }
+  /*END OF Mision vv slide*/
+/*-------------END OF SOBRE AGARI PHONE-------------*/
+
+/*-------------CONTACTO PHONE-------------*/
+	textarea{
+		width:90%;
+		margin:0;
+		padding:0;
+		resize:none;
+		overflow:auto;
+		display:inline;
+
 	}
+	#section3 form{
+		margin-left:20px;
+		width:90%;
+	}
+	#section3 input{
+		height:30px;
+		width:90%;
+	}
+
+	#section3 textarea{
+		height
+	}
+
+	#section3 label{
+		font-size:15px;
+		margin-bottom:100px;
+
+	}
+
+
+/*-------------END OF CONTACTO PHONE-------------*/
+
+
 }/*END OF PHONE*/
 
 
 	/*TABLET*/
 
-	@media (min-width:768px) and (max-width:1023px){
+	@media (min-width:451px) and (max-width:1023px){
 		/*-------------INICIO-------------*/
     #section0{
       background-image: url("img/drink.jpg");
@@ -245,4 +486,10 @@
 
 	}
 		/*-------------END OF INICIO-------------*/
+
+    /*-------------SOBRE AGARI INICIO-------------*/
+      /*slide sobre agari*/
+
+
+    /*-------------END OF SOBRE AGARI-------------*/
 	}/*END OF TABLET*/
