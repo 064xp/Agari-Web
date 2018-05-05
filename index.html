@@ -33,7 +33,6 @@
 		});
 		});
 
-
 		</script>
 		<!-- end of initalization-->
 	<title>agari</title>
@@ -70,9 +69,15 @@
 
 	<p id="agari-font">agari</p>
 
-	<svg width="100%" height="70px" class="top-bar">
-		<rect width="100%" height="70px" style="fill:#45a941;">
+	<svg width="100%" height="48px" class="top-bar">
+		<rect width="100%" height="48px" style="fill:#45a941;"></rect>
 	</svg>
+
+	<svg width="100%" height="73px" class="tablet-topbar">
+		<rect width="100%" height="73px" style="fill:#45a941;"></rect>
+	</svg>
+
+
 	<input type="checkbox" id="toggle" >
 	<label for="toggle" id="ham-button">
 		<i class="fas fa-bars" ></i>
@@ -89,15 +94,6 @@
 		<div id="logo-mobile">
 							<a href="#"><img id="img-logo-mobile"src="img/agari_logo" alt="agari logo" height="100px" ></a>
 
-					<svg id="circle-tablet" height="60px" width="60px">
-
-							<circle cx="60.5px" cy="57px" r="53px" fill="#45a941"/>
-					</svg>
-
-						<svg id="circle-phone" height="60px" width="60px">
-
-								<circle cx="47.5px" cy="42px" r="42px" fill="#45a941"/>
-						</svg>
 		</div>
 </nav>
 </div>
@@ -128,27 +124,46 @@
 			<div class="slide" id="clasico">
 				<div class="overlayphotos"></div>
 				<img src="img/titles/clasico_tt.svg" alt="CLASICO">
+				<div class="btn-cont">
+					<a href="#" class="btn-buy">Agregar a Carrito</a>
+				</div>
+
 			</div>
 
 			<!--slide Limon-->
 			<div class="slide" id="limon">
 					<img src="img/titles/limon_tt.svg" alt="LIMON">
-
+					<div class="btn-cont">
+						<a href="#" class="btn-buy">Agregar a Carrito</a>
+					</div>
 			</div>
 			<!--slide chamoy-->
 			<div class="slide" id="chamoy">
 					<img src="img/titles/chamoy_tt.svg" alt="CHAMOY">
+					<div class="btn-cont">
+						<a href="#" class="btn-buy">Agregar a Carrito</a>
+					</div>
 			</div>
 			<!--slide fresa-->
 			<div class="slide" id="fresa">
-<img src="img/titles/fresa_tt.svg" alt="LIMON">
+
+					<img src="img/titles/fresa_tt.svg" alt="LIMON">
+
+					<div class="btn-cont">
+						<a href="#" class="btn-buy">Agregar a Carrito</a>
+					</div>
 			</div>
 			<!--slide chocolate-->
 			<div class="slide" id="chocolate">
 					<img src="img/titles/chocolate_tt.svg" alt="CHOCOLATE">
+					<div class="btn-cont">
+						<a href="#" class="btn-buy">Agregar a Carrito</a>
+					</div>
 			</div>
 
 	</div>
+
+
 	<div class="section" id="section2">
 		<div class="slide" id="sobreSlide">
 
@@ -157,7 +172,7 @@
 					<span class="head1">Sobre Agari</span><br>
 					Agari es una empresa que busca el bien del consumidor y de la naturaleza por medio de la elaboración de un popote a base de agar agar.
 					<br><br><span class="head1">¿Qué es agar-agar?</span><br>
-					
+
 					El agar agar es una sustancia gelatinosa no animal de origen marino obtenido de la pared celular de varias especies de algas, además tiene un contenido alto en fibra y minerales como el potasio, magnesio, yodo y calcio.
 				</p>
 
@@ -189,23 +204,54 @@
 
 		</div>
 	</div><!--end of section-->
-	
+
 
 	<!--CONTACTO-->
 	<div class="section" id="section3">
-		
-	<div class="headerImg"></div>
-		<form>
-			<label for="nombre">Ingresa tu Nombre</label>
-			<input type="text" placeholder="Alex Gari" id="nombre">
-			<label for="email">Ingresa Tu Correo</label>
-			<input type="email" placeholder="ej. tucorreo@agarimail.com" id="email">
-			<label for="msj">Ingresa Tu Mensaje</label>
-			<textarea cols="60" rows="10" placeholder="Tu mensaje"></textarea>
-</textarea>
 
-	<button type="submit" class="btn-submit">Enviar</button>
+	<div class="headerImg">
+			<div class="overlayCont"></div>
+				<h1>Contacto</h1>
+			</div>
+		<h2 id="ContactSubt">¡Escríbenos!</h2>
+
+<div class="contactFlex">
+		<!--form-->
+		<form>
+				<label for="nombre">Nombre</label>
+				<input type="text" placeholder="Alex Gari" id="nombre">
+					<label for="email">Correo</label>
+					<input type="email" placeholder="ej. tucorreo@agarimail.com" id="email">
+				<label for="msj">Mensaje</label>
+				<textarea cols="67" rows="8" placeholder="Tu mensaje"></textarea>
+
+			<button type="submit" class="btn-submit">Enviar</button>
 		</form>
+<!--end of form-->
+
+
+		<div id="detalles">
+			<div class="detalles-box">
+				<h2>Detalles de Contacto</h2>
+
+				<h3>Ubicación</h3>
+				<p>Av. Hoja Verde 45440, Col. La Pradera</p>
+				<h3>Teléfono</h3>
+				<p>01 (33) 923.944</p>
+				<p>3364.9421</p>
+				<h3>Correo</h3>
+				<p>popotes@agari.mx</p>
+			</div>
+
+			<div id="redesS">
+				<h3><i class="fab fa-facebook-square"></i> Agari MX</h3>
+				<h3><i class="fab fa-instagram"></i> @agariMX</h3>
+			</div>
+
+		</div>
+
+
+</div><!--end of contact flex-->
 
 	</div>
 </div>

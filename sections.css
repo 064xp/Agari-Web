@@ -7,6 +7,32 @@
   position: absolute;
 }
 
+
+
+.btn-buy{
+  text-decoration: none;
+  display:block;
+  height:40px;
+  width:300px;
+  text-align: center;
+  -webkit-border-radius:25px;
+  font-weight:bold;
+  font-size:29px;
+  margin: 50px auto;
+  background-color: rgba(189, 209, 188, .2);
+  border: solid 3px white;
+  color:white;
+  -webkit-transition:all 250ms ease-in-out;
+  position:relative;
+  z-index: 2;
+
+}
+
+.btn-buy:hover{
+  background-color:white;
+  color:#212121;
+}
+
 /*----------------------------Inicio----------------------------*/
 	/*==Desktop==*/
 
@@ -29,6 +55,7 @@
   position: absolute;
 	top:0;
   -webkit-transform:scaleX(-1);
+  width:100vw;
 }
 
 #startHeader{
@@ -38,6 +65,7 @@
 	position:absolute;
   font-size: 120px;
   z-index: 10;
+  left:10%;
 
 }
 
@@ -46,6 +74,7 @@
 	font-size: 40px;
 	z-index: 3;
 	top:70%;
+	left:8%;
 }
 
 /*-------------END OF INICIO-------------*/
@@ -61,6 +90,15 @@
   top:0;
   z-index: 0;
 }
+#section1 img{
+  display: block;
+  margin:200px auto 0;
+  padding:0;
+  width:60%;
+  z-index:1;
+  position: static;
+}
+
 #clasico{
   background-image: url("img/clasico.jpg");
   background-size: cover;
@@ -75,6 +113,7 @@
   background-size: cover;
 }
 #limon img{
+  position:static;
   -webkit-transform:scale(1.2);
   top:3%;
 }
@@ -84,38 +123,31 @@
   background-size: cover;
 }
 #chamoy img{
-  -webkit-transform:scale(1.4);
-  top:3%;
+  -webkit-transform:scale(1);
+
 }
+
 
 #fresa{
   background-image: url("img/fresa.jpg");
   background-size: cover;
 }
 #fresa img{
-  -webkit-transform:scale(1.37);
-  top:3%;
+  -webkit-transform:scale(1);
+
 }
+
 
 #chocolate{
   background-image: url("img/chocolate.jpg");
   background-size: cover;
 }
 #chocolate img{
-  -webkit-transform:scale(1.23,1.6);
-  top:3%;
+  position: relative;
+
+
 }
 
-#section1 img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:-10%;
-  padding:0;
-  width:60%;
-  z-index:1;
-  position: relative;
-}
 
 /*-------------END OF COMPRAR DESKTOP-------------*/
 
@@ -195,10 +227,57 @@
 
 /*-------------CONTACTO DESKTOP-------------*/
 
+/*contact heading*/
+.headerImg{
+	background:url("img/contacto-header.jpg");
+	background-size:cover;
+	background-position: 0% 30%;
+	width:100vw;
+	height:20%;
+	position:absolute;
+	top:0;
+	z-index: 0;
+}
+
+.headerImg h1{
+	color:white;
+	display: flex;
+	justify-content: center;
+	margin-top:35px;
+	align-items:center;
+	height:100%;
+	font-size:60px;
+	z-index: 2;
+	position:relative;
+}
+
+.overlayCont{
+	background:black;
+	width:100vw;
+	height:100%;
+	opacity:.5;
+	position:absolute;
+	z-index: 0;
+	left:0;
+	top:0;
+}
+
+#ContactSubt{
+	background:#45a941;
+	width:100vw;
+	position:absolute;
+	top:20%;
+	text-align: center;
+	font-size:30px;
+	font-weight:normal;
+  height:5%;
+}
+/*end of contact heading*/
+
 #section3 input{
   display:block;
   width:100%;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 	padding-left:10px;
 	-webkit-border-radius:15px;
 	font-size:17px;
@@ -207,6 +286,8 @@
 }
 label{
   color:black;
+	font-size:25px;
+	font-weight:bold;
 }
 
 #section3 textarea{
@@ -217,10 +298,11 @@ label{
 	-webkit-border-radius:15px;
 	resize: none;
 	border: 1px solid #282828;
+  width:100%;
 }
 
 #section3 form{
-	margin:5% 10% 0 5%;
+	margin:0 10% 0 5%;
 	width:33%;
 }
 
@@ -240,6 +322,7 @@ label{
 	background-color: rgba(69, 169, 65, 0);
 	border: solid 3px rgb(69, 169, 65);
 	color:#3E3E3E;
+  -webkit-transition:all ease-in-out 250ms;
 }
 
 .btn-submit:hover{
@@ -247,6 +330,55 @@ label{
 	background-color: #45a941;
 }
 
+
+.contactFlex{
+  display:flex;
+  position: relative;
+  top:15%;
+}
+
+
+/*Detalles de contacto */
+#detalles{
+  margin: 25px 0 0 15%;
+  color:black;
+}
+#detalles h2{
+  margin-bottom:10%;
+  font-weight:normal;
+  border-bottom:solid #45a941 3px;
+  width:230px;
+}
+#detalles p{
+  margin: 0 0 30px 0;
+}
+#detalles p:nth-child(5){
+  margin-bottom:5px;
+}
+
+#detalles p:nth-child(8){
+  padding-bottom:30px;
+  border-bottom:solid #45a941 3px;
+}
+
+
+#redesS i{
+  font-size: 35px;
+  font-weight: normal;
+  color:#45a941;
+  position: relative;
+  top:3px;
+}
+#redesS h3{
+  font-size:20px;
+  font-weight:normal;
+}
+#redesS h3:first-child{
+  float:left;
+}
+#redesS h3:last-child{
+  float:right;
+}
 /*-------------END OF CONTACTO DESKTOP-------------*/
 
 
@@ -290,15 +422,15 @@ label{
 
 	#startHeader{
 		z-index: 3;
-		text-align: center;
-		margin-top:-40%;
-		width:100%;
-
+    left:0;
+    width:100vw;
+    text-align: center;
+    top:30%;
 	}
 
 	#startP{
 	color:#2F2F2F;
-	width:100%;
+	width:80%;
 	margin-top: -30%;
 	font-size: 25px;
 	z-index: 3;
@@ -332,7 +464,19 @@ label{
 
 	/*-------------COMPRAR PHONE-------------*/
 
-			/*none*/
+  #section1 img{
+    margin:-10% auto 0;
+    width:90%;
+    hieght:auto;
+  }
+	#clasico img{
+    width:75%;
+    height:auto;
+  }
+  #limon img{
+    width:75%;
+    height:auto;
+  }
 
 /*-------------END OF COMPRAR PHONE-------------*/
 
@@ -360,20 +504,20 @@ label{
 	/*END OF Sobre agari slide*/
 
   /*Mision vv slide*/
-	
-	
-	
 
- 
+
+
+
+
 
   .mvWrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: scroll;
+  overflow-y: scroll !important;
 	height:100vh;
 }
-	
+
 
 	#mision-Rocket{
 		margin:390px auto;
@@ -386,7 +530,7 @@ label{
     font-size: 18px;
     margin-bottom:5px;
   }
-	
+
 
   .mvWrapper h2{
     height:100px;
@@ -406,6 +550,29 @@ label{
 /*-------------END OF SOBRE AGARI PHONE-------------*/
 
 /*-------------CONTACTO PHONE-------------*/
+
+/*header img*/
+
+.headerImg{
+  height:20%;
+}
+
+.headerImg  h1{
+  margin-top:7px;
+  font-weight:normal;
+  font-size:40px;
+}
+
+#ContactSubt{
+  top:15%;
+  font-size:25px;
+  color:white;
+}
+/*form*/
+#section3 form{
+  margin:-25px 0 0 20px;
+  width:90%;
+}
 	textarea{
 		width:90%;
 		margin:0;
@@ -413,27 +580,47 @@ label{
 		resize:none;
 		overflow:auto;
 		display:inline;
+    height:100px;
+	}
 
-	}
-	#section3 form{
-		margin-left:20px;
-		width:90%;
-	}
 	#section3 input{
 		height:30px;
 		width:90%;
 	}
 
-	#section3 textarea{
-		height
-	}
 
 	#section3 label{
-		font-size:15px;
+		font-size:25px;
 		margin-bottom:100px;
+    font-weight: normal;
 
 	}
 
+/*detalles de contacto*/
+.contactFlex{
+  display:block;
+  position: relative;
+  top:35%;
+}
+
+#detalles{
+  margin-top:130px;
+  width:50%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#redesS h3{
+  display: block!important;
+  float:none !important;
+  margin-bottom:10px;
+}
+
+#redesS i{
+  top:4px;
+}
 
 /*-------------END OF CONTACTO PHONE-------------*/
 
@@ -444,6 +631,20 @@ label{
 	/*TABLET*/
 
 	@media (min-width:451px) and (max-width:1023px){
+
+    .fp-controlArrow.fp-prev {
+        left: 15px;
+        width: 0;
+        border-width: 25.5px 21px 25.5px 0 !important;
+        border-color: transparent #fff transparent transparent;
+        opacity:.6;
+      }
+    .fp-controlArrow.fp-next {
+        right: 15px;
+        border-width: 25.5px 0 25.5px 21px !important;
+        border-color: transparent transparent transparent #fff;
+        opacity:.6;
+    }
 		/*-------------INICIO-------------*/
     #section0{
       background-image: url("img/drink.jpg");
@@ -465,7 +666,7 @@ label{
 		text-align: center;
 		margin-top:-40%;
 		width:100%;
-
+    left:0;
 	}
 
 	#startP{
@@ -475,6 +676,7 @@ label{
 	font-size: 60px;
 	z-index: 3;
 	text-align: center;
+  left:0;
 }
 	#startvid{
 		position:absolute;
@@ -499,21 +701,76 @@ label{
 	}
 		/*-------------END OF INICIO-------------*/
 
+    /*-------------COMPRAR TABLET-------------*/
+    .btn-buy{
+      width:50%;
+      height:50px;
+      font-size: 39px;
+    }
+
+    #section1 img{
+      margin:-10% auto 0;
+      width:90%;
+      hieght:auto;
+    }
+  	#clasico img{
+      width:75%;
+      height:auto;
+    }
+    #limon img{
+      width:75%;
+      height:auto;
+    }
+
+    /*-------------END OF COMPRAR TABLET-------------*/
+
+
     /*-------------SOBRE AGARI INICIO-------------*/
       /*slide sobre agari*/
 		#sobreSlide p{
 			width:70%;
 			margin-top:auto;
 		}
-		
+
 		.head1{
 		  font-weight:bolder;
 		  font-size: 35px;
 			white-space: pre;
 		}
-}	
-		/*end of slide sobre agari*/
 
+    /*CONTACTO TABLET*/
+    #section3 textarea{
+      width:100%;
+    }
 
-    /*-------------END OF SOBRE AGARI-------------*/
-	}/*END OF TABLET*/
+    .contactFlex{
+      display: block;
+    }
+    #section3 form{
+      width:90%;
+    }
+    #detalles{
+      display: flex;
+      margin:90px 0 0 0;
+      justify-content: space-around;
+
+    }
+    .detalles-box{
+      flex-grow: 0;
+    }
+
+    #redesS{
+      margin:auto;
+    }
+    #redesS h3:first-child{
+      float:none;
+      display: block;
+    }
+    #redesS h3:last-child{
+      float:none;
+      display: block;
+    }
+
+    /*END OF CONTACTO TABLET*/
+
+}/*END OF TABLET*/
