@@ -114,7 +114,7 @@ nav svg{/*mobile green top bar*/
 
 /*------------------------Mobile nav bar------------------------*/
 /*tablet*/
-@media (max-width:1023px){
+@media (max-width:1023px) {
 	.section0{
 		width:100%;
 		top:100%;
@@ -123,6 +123,7 @@ nav svg{/*mobile green top bar*/
 	#agari-font{
 		left:120px;
 		top:10px;
+
 	}
 	#circle-tablet{
 		z-index: 0;
@@ -130,10 +131,21 @@ nav svg{/*mobile green top bar*/
 	#circle-phone{
 		display: none;
 	}
+	#tablet-topbar{
+		position: fixed;
+	}
 .top-bar{
+		position: fixed;
+		top:0;
+		z-index: 0;
+		display: none;
+}
+
+.tablet-topbar{
 	position: fixed;
 	top:0;
 	z-index: 0;
+	display: block;
 }
 
 #destkop-navbar{
@@ -171,7 +183,7 @@ nav svg{/*mobile green top bar*/
 	margin:0;
 	text-align: left;
 	position:fixed;
-	top: 70px;
+	top: 73px !important;
 	right:0;
 	width:90%;
 	-webkit-transform:translateX(100%);
@@ -183,12 +195,12 @@ nav svg{/*mobile green top bar*/
 }
 
 #ham-button{
-	font-size: 38px;
+	font-size: 48px;
 	color:#f9f6f6;
 	margin:0;
 	padding:0;
 	position:fixed;
-	top:16px;
+	top:8px !important;
 	right:10px;
 
 	-webkit-transition:all ease-in-out 250ms;
@@ -217,9 +229,16 @@ nav svg{/*mobile green top bar*/
 /*phone*/
 @media (max-width:450px ){
 
+	.tablet-topbar{
+		display: none;
+	}
+	.top-bar{
+		display: block;
+		border:0;
+	}
 	#agari-font{
 		left:100px;
-		top: 4px;
+		top: -2px;
 		font-size: 40px;
 }
 	#circle-tablet{
@@ -254,12 +273,12 @@ nav svg{/*mobile green top bar*/
 	}
 
 	#ham-button{
-		top:14px;
+		top:5px!important;
 		font-size:33px;
 	}
 
 	.ham-list-items{
-		top:60px;
+		top:48px !important;
 	}
 	#toggle:checked ~ .ham-list-items {
 		-webkit-transform: translateX(25%);
