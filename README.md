@@ -3,3 +3,5 @@ School project where we had to develop a fictional company and everything it enc
 This is the website, made with HTML, CSS and [fullpage.js](https://alvarotrigo.com/fullPage/) jQuery plugin.
 
 This was my first shot at hand coding a website so there's a lot of bad practice and stuff to be improved.
+
+https://064xp.github.io/Agari-Web/#AgariInicio
